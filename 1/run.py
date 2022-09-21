@@ -5,9 +5,7 @@ from config import Configure
 
 osNAME = Configure.__getattribute__('name')
 
-SetupWizard = OS.Setup(
-
-)
+SetupWizard = OS.Setup()
 # authenticate the OS before running
 SetupWizard.systemauthenticate()
 # Print the startup message
@@ -41,3 +39,5 @@ else: SetupWizard.PrintStartupMessage(
 )
 
 print("Starting {}...".format(osNAME))
+
+SetupWizard.PrintStartupMessage(osNAME)
