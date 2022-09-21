@@ -5,10 +5,7 @@ Settings = {"name": "anOS", "default_bios": [], "default_user": "root", "run_aft
 Configure(
     run_file="./run.py",
     # OS settings
-    name="anOS",
-    default_bios = [],
-    default_user = "root",
-    run_after_seconds = 1
+    settingsObj=Settings
 )
 
 # This file is the main entry point for your OS.
