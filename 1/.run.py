@@ -3,7 +3,7 @@
 from PyOS.core import OS
 from config import Configure
 
-osNAME = Configure.__getattribute__('name')
+
 
 SetupWizard = OS.Setup()
 # authenticate the OS before running
